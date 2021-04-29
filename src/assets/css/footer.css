@@ -1,4 +1,4 @@
-/* footer {
+footer {
   display: block;
   text-align: center;
   position: relative;
@@ -68,4 +68,4 @@
     opacity: 0;
     z-index: -99;
   }
-} */
+}

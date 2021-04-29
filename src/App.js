@@ -9,6 +9,7 @@ import WarningSign from './components/WarningSing';
 import MyBadge from './components/MyBadge';
 import SingleBook from './components/SingleBook';
 import fantasy from './data/fantasy.json';
+import BookList from './components/BookList';
 
 function App() {
   return (
@@ -18,8 +19,13 @@ function App() {
       <MyBadge text="NEW!!!" color="danger" />
       <MyJumbotron />
       <SingleBook book={fantasy[0]} />
-      <LatestReleases />
-      <MyFooter />
+      <WarningSign text="WARNING!!!" />
+      <BookList books={fantasy} />
+      {/* <WarningSign text="WARNING!!!" />
+      <WarningSign text="WARNING!!!" />
+      <WarningSign text="WARNING!!!" />
+      <LatestReleases /> */}
+      {/* <MyFooter /> */}
     </div>
   );
 }
