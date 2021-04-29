@@ -1,50 +1,25 @@
 import React from 'react'
-import { Container, Col, ListGroup, Row } from 'react-bootstrap'
+import "../assets/css/footer.css";
+import Insta from "../assets/img/insta.png";
+import Github from "../assets/img/github.png";
+import Linkd from "../assets/img/linkedin.png";
 
 const MyFooter = () => (
 
-<footer className="pt-4 border-top">
-    <Container fixed="bottom">
-        <Row className='justify-content-center'>
-            <Col>
-            <h4>Features</h4>
-                <ListGroup>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-
-                </ListGroup>
-            </Col>
-            <Col>
-            <h4>Product</h4>
-                <ListGroup>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-
-                </ListGroup>
-            </Col>
-            <Col>
-            <h4>About</h4>
-                <ListGroup>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-
-                </ListGroup>
-            </Col>
-            <Col>
-            <h4>Contact us</h4>
-                <ListGroup>
-                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-
-                </ListGroup>
-            </Col>
-        </Row>
-    </Container>
-</footer>
+<footer>
+      <div className="footer">
+        <a href="#">
+          <img className="icon" src={Insta} alt="" />
+        </a>
+        <a href="#">
+          <img className="icon" src={Github} alt="" />
+        </a>
+        <a href="#">
+          <img className="icon" src={Linkd} alt="" />
+        </a>
+        <p>Abdulkadir Salad &copy;{new Date().getFullYear()} </p>
+      </div>
+    </footer>
 )
 
 export default MyFooter

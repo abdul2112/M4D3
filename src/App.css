@@ -2,8 +2,5 @@
   min-height: 100vh;
 }
 .book-cover {
-  padding: 15px;
-  width: 340px;
-  height: 500px;
-  object-fit: cover;
+  width: 33%;
 }
